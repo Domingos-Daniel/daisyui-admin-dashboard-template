@@ -32,7 +32,7 @@ function Header(){
 
     // Opening right sidebar for notification
     const openNotification = () => {
-        dispatch(openRightDrawer({header : "Notifications", bodyType : RIGHT_DRAWER_TYPES.NOTIFICATION}))
+        dispatch(openRightDrawer({header : "Notificações", bodyType : RIGHT_DRAWER_TYPES.NOTIFICATION}))
     }
 
 
@@ -90,19 +90,19 @@ function Header(){
                 <div className="dropdown dropdown-end ml-4">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
-                        <img src="https://placeimg.com/80/80/people" alt="profile" />
+                        <img src="" alt="Perfil" />
                         </div>
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li className="justify-between">
                         <Link to={'/app/settings-profile'}>
-                            Profile Settings
-                            <span className="badge">New</span>
+                            Definições do Perfil
+                            <span className="badge">Novo</span>
                             </Link>
                         </li>
-                        <li className=''><Link to={'/app/settings-billing'}>Bill History</Link></li>
+                        <li className=''><Link to={'/app/settings-billing'}>Histórico de Cobrança</Link></li>
                         <div className="divider mt-0 mb-0"></div>
-                        <li><a onClick={logoutUser}>Logout</a></li>
+                        <li><a onClick={logoutUser}>Sair</a></li>
                     </ul>
                 </div>
             </div>
