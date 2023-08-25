@@ -19,8 +19,8 @@ function Login(){
         e.preventDefault()
         setErrorMessage("")
 
-        if(loginObj.emailId.trim() === "")return setErrorMessage("Email Id is required! (use any value)")
-        if(loginObj.password.trim() === "")return setErrorMessage("Password is required! (use any value)")
+        if(loginObj.emailId.trim() === "")return setErrorMessage("Email é obrigatório! (use qualquer)")
+        if(loginObj.password.trim() === "")return setErrorMessage("Password é obrigatória! (use qualquer)")
         else{
             setLoading(true)
             // Call API to check user credentials and save token in localstorage
@@ -54,14 +54,14 @@ function Login(){
 
                         </div>
 
-                        <div className='text-right text-primary'><Link to="/forgot-password"><span className="text-sm  inline-block  hover:text-primary hover:underline hover:cursor-pointer transition duration-200">Forgot Password?</span></Link>
+                        <div className='text-right text-primary'><Link to="/forgot-password"><span className="text-sm  inline-block  hover:text-primary hover:underline hover:cursor-pointer transition duration-200">Esqueceu a senha?</span></Link>
                         </div>
 
                         <ErrorText styleClass="mt-8">{errorMessage}</ErrorText>
                         <button type="submit" className={"btn mt-2 w-full btn-primary" + (loading ? " loading" : "")}>Login</button>
 
-                        <div className='text-center mt-4'>Don't have an account yet? <Link to="/register"><span className="  inline-block  hover:text-primary hover:underline hover:cursor-pointer transition duration-200">Register</span></Link></div>
-                    </form>
+                        {/* <div className='text-center mt-4'>Não possui uma conta ainda? <Link to="/register"><span className="  inline-block  hover:text-primary hover:underline hover:cursor-pointer transition duration-200">Reg</span></Link></div> */}
+                     </form>
                 </div>
             </div>
             </div>
