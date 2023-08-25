@@ -43,23 +43,23 @@ const routes = [
   {
     path: '/app/charts', // url
     icon: <ChartBarIcon className={iconClasses}/>, // icon component
-    name: 'Analytics', // name that appear in Sidebar
+    name: 'Analytics & Gráficos', // name that appear in Sidebar
   },
   {
     path: '/app/integration', // url
     icon: <BoltIcon className={iconClasses}/>, // icon component
-    name: 'Integration', // name that appear in Sidebar
+    name: 'Integração', // name that appear in Sidebar
   },
-  {
+  /*{
     path: '/app/calendar', // url
     icon: <CalendarDaysIcon className={iconClasses}/>, // icon component
     name: 'Calendar', // name that appear in Sidebar
-  },
+  },*/
 
   {
     path: '', //no url needed as this has submenu
     icon: <DocumentDuplicateIcon className={`${iconClasses} inline` }/>, // icon component
-    name: 'Pages', // name that appear in Sidebar
+    name: 'Páginas', // name that appear in Sidebar
     submenu : [
       {
         path: '/login',
@@ -69,17 +69,17 @@ const routes = [
       {
         path: '/register', //url
         icon: <UserIcon className={submenuIconClasses}/>, // icon component
-        name: 'Register', // name that appear in Sidebar
+        name: 'Registrar', // name that appear in Sidebar
       },
       {
         path: '/forgot-password',
         icon: <KeyIcon className={submenuIconClasses}/>,
-        name: 'Forgot Password',
+        name: 'Esqueci a Senha',
       },
       {
         path: '/app/blank',
         icon: <DocumentIcon className={submenuIconClasses}/>,
-        name: 'Blank Page',
+        name: 'Página em Branco',
       },
       {
         path: '/app/404',
@@ -113,22 +113,22 @@ const routes = [
   {
     path: '', //no url needed as this has submenu
     icon: <DocumentTextIcon className={`${iconClasses} inline` }/>, // icon component
-    name: 'Documentation', // name that appear in Sidebar
+    name: 'Documentação', // name that appear in Sidebar
     submenu : [
       {
         path: '/app/getting-started', // url
         icon: <DocumentTextIcon className={submenuIconClasses}/>, // icon component
-        name: 'Getting Started', // name that appear in Sidebar
+        name: 'Início', // name that appear in Sidebar
       },
       {
         path: '/app/features',
         icon: <TableCellsIcon className={submenuIconClasses}/>, 
-        name: 'Features',
+        name: 'Características',
       },
       {
         path: '/app/components',
         icon: <CodeBracketSquareIcon className={submenuIconClasses}/>, 
-        name: 'Components',
+        name: 'Componentes',
       }
     ]
   },
