@@ -16,10 +16,10 @@ import DoughnutChart from './components/DoughnutChart'
 import { useState } from 'react'
 
 const statsData = [
-    {title : "New Users", value : "34.7k", icon : <UserGroupIcon className='w-8 h-8'/>, description : "↗︎ 2300 (22%)"},
-    {title : "Total Sales", value : "$34,545", icon : <CreditCardIcon className='w-8 h-8'/>, description : "Current month"},
-    {title : "Pending Leads", value : "450", icon : <CircleStackIcon className='w-8 h-8'/>, description : "50 in hot leads"},
-    {title : "Active Users", value : "5.6k", icon : <UsersIcon className='w-8 h-8'/>, description : "↙ 300 (18%)"},
+    {title : "Total de ATMs", value : "150", icon : <UserGroupIcon className='w-8 h-8'/>, description : "↗︎ 2300 (22%)"},
+    {title : "Total ATMs 100%", value : "130", icon : <CreditCardIcon className='w-8 h-8'/>, description : "Para Hoje"},
+    {title : "Total ATMs Pendentes", value : "15", icon : <CircleStackIcon className='w-8 h-8'/>, description : "5 com urgência"},
+    {title : "ATMs Fora de Serviço", value : "5", icon : <UsersIcon className='w-8 h-8'/>, description : "↙ 300 (18%)"},
 ]
 
 
@@ -31,7 +31,7 @@ function Dashboard(){
 
     const updateDashboardPeriod = (newRange) => {
         // Dashboard range changed, write code to refresh your values
-        dispatch(showNotification({message : `Period updated to ${newRange.startDate} to ${newRange.endDate}`, status : 1}))
+        dispatch(showNotification({message : `Período atualizado para ${newRange.startDate} to ${newRange.endDate}`, status : 1}))
     }
 
     return(

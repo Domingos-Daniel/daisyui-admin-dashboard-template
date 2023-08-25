@@ -23,7 +23,7 @@ function Calendar(){
         let randomEvent = INITIAL_EVENTS[Math.floor(Math.random() * 10)]
         let newEventObj = {title : randomEvent.title, theme : randomEvent.theme, startTime : moment(date).startOf('day'), endTime : moment(date).endOf('day')}
         setEvents([...events, newEventObj])
-        dispatch(showNotification({message : "New Event Added!", status : 1}))
+        dispatch(showNotification({message : "Novo Evento Adicionado!", status : 1}))
     }
 
     // Open all events of current day in sidebar 
